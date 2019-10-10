@@ -1,4 +1,8 @@
 function calcular(tipo, valor) {
+
+    /* Função calcular, irá pegar o tipo da entrada (Ação ou número)
+
+     document.getElementById('resultado').value | pega o valor escrito na tela */
   
     if(tipo === 'acao') {
 
@@ -19,7 +23,8 @@ function calcular(tipo, valor) {
         }
 
     } else if(tipo === 'valor'){
-       document.getElementById('resultado').value += valor
+        // "+="" nesse caso irá concatenar os números para formar núemros de dois ou mais digitos
+        document.getElementById('resultado').value += valor
     }
 
 }
